@@ -1,0 +1,23 @@
+{
+  "name": "platzi-curso-practico-html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npx browser-sync --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisFalconMX/platzi-curso-practico-html-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisFalconMX/platzi-curso-practico-html-css/issues"
+  },
+  "homepage": "https://github.com/LuisFalconMX/platzi-curso-practico-html-css#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12"
+  }
+}
