@@ -1,3 +1,68 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: calc(100% - 40px);
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.menu {
+    width: auto;
+    height: auto;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu__list:nth-last-child() {
+    margin-right: 0;
+}
+
+.menu__item {
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.menu__link {
+    font-size: 13px;
+    color: black;
+}
+
+.menu__icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    /* border: 1px solid black; */
+    background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+    background-repeat: no-repeat;
+    background-position: -132px -38px;
+    background-size: 528px 68px;
+}
+
+.menu__image {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-image: url('https://avatars0.githubusercontent.com/u/57654255?s=460&u=46cdb41f13e04706bfab0c0a1ed4e3cceff2c30d&v=4');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
 }
