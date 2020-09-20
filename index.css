@@ -56,7 +56,7 @@ header {
     width: 30px;
     height: 30px;
     display: block;
-    background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+    background-image: url('./images/sprite-google-search.png');
     background-repeat: no-repeat;
     background-position: -132px -38px;
     background-size: 528px 68px;
@@ -89,7 +89,7 @@ header {
     width: calc(582px - 32px);
     height: calc(44px - 10px);
     padding: 5px 16px;
-    margin: 22px 0 25px 0;
+    margin: 28px 0 28px 0;
     display: flex;
     align-items: center;
     border: 1px solid lightgray;
@@ -120,11 +120,16 @@ header {
 }
 
 .main__icon--cross {
+    display: none;
     cursor: pointer;
     background-image: url('./images/icon-cross.svg');
     background-repeat: no-repeat;
     background-size: 24px;
     background-position: center;
+}
+
+.main__icon--show {
+    display: block;
 }
 
 .main__input {
