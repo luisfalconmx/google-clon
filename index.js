@@ -12,3 +12,8 @@ input.addEventListener('input', () => {
     }
 
 })
+
+btn_close.addEventListener('click', () => {
+    input.value = '';
+    btn_close.classList.remove('main__icon--show')
+})
