@@ -149,6 +149,7 @@ header {
     color: #5F6368;
     cursor: pointer;
     font-size: 14px;
+    outline-color: cornflowerblue;
 }
 
 .main__button:hover {
