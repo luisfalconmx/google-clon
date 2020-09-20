@@ -1,7 +1,6 @@
 body {
     width: 100%;
     height: 100vh;
-    max-height: 100vh;
     padding: 0;
     margin: 0;
     display: grid;
@@ -166,6 +165,7 @@ header {
     padding: 10px 30px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
 }
@@ -188,4 +188,24 @@ header {
 .footer__link {
     font-size: 14px;
     color: #5f6368;
+}
+
+
+@media screen and (max-width: 615px){
+    .main__form {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__list {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer__item--media {
+        display: none;
+    }
 }
