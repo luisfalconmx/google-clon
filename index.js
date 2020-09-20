@@ -2,6 +2,7 @@ const input = document.getElementById('main__input')
 const btn_close = document.getElementById('main__icon--cross')
 const btn_search = document.getElementById('main__button--search')
 const btn_lucky = document.getElementById('main__button--lucky')
+const user_image = document.getElementById('menu__image')
 
 // Show / Hide x button
 input.addEventListener('input', () => {
@@ -50,3 +51,9 @@ btn_lucky.addEventListener('click', (e) => {
         window.location.href = `https://www.google.com/search?q=${search_value}&btnI`;
     }
 })
+
+fetch('https://api.github.com/users/luisfalconmx')
+    .then(response => response.json())
+    .then(data => {
+        user_image.style.backgroundImage = `url('${data.avatar_url}')`
+    });
