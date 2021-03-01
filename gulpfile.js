@@ -3,6 +3,7 @@ const htmlmin = require("gulp-htmlmin");
 const cleanCSS = require("gulp-clean-css");
 const terser = require("gulp-terser");
 const clean = require("gulp-clean");
+const ghPages = require("gulp-gh-pages");
 
 gulp.task("minify-html", () => {
   return gulp
@@ -30,6 +31,10 @@ gulp.task("clean", () => {
   return gulp.src("dist", { read: false }).pipe(clean());
 });
 
+gulp.task("github-pages", function () {
+  return gulp.src("./dist/**/*").pipe(ghPages());
+});
+
 gulp.task(
   "build",
   gulp.series([
@@ -40,3 +45,5 @@ gulp.task(
     "copy-images",
   ])
 );
+
+gulp.task("deploy", gulp.series(["build", "github-pages"]));
