@@ -4,28 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "npx browser-sync --watch"
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LuisFalconMX/platzi-curso-practico-html-css.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "luisfalconmx",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/LuisFalconMX/platzi-curso-practico-html-css/issues"
   },
   "homepage": "https://github.com/LuisFalconMX/platzi-curso-practico-html-css#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.12",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-terser": "^2.0.1",
-    "i": "^0.3.6",
-    "npm": "^7.6.0"
+    "gulp-imagemin": "^7.1.0",
+    "gulp-terser": "^2.0.1"
   }
 }
