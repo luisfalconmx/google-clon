@@ -1,8 +1,12 @@
 {
-  "name": "platzi-curso-practico-html-css",
+  "name": "google-clon",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Google clone layout as a practical frontend exercise",
+  "main": "gulpfile.js",
+  "engines": {
+    "node": ">=14.15.4",
+    "npm": ">=7.5.4"
+  },
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
@@ -10,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LuisFalconMX/platzi-curso-practico-html-css.git"
+    "url": "git+https://github.com/luisfalconmx/google-clon.git"
   },
-  "keywords": [],
+  "keywords": ["personal-project", "practice-project", "gulp", "google-clon", "css", "html"],
   "author": "luisfalconmx",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LuisFalconMX/platzi-curso-practico-html-css/issues"
+    "url": "https://github.com/luisfalconmx/google-clon/issues"
   },
-  "homepage": "https://github.com/LuisFalconMX/platzi-curso-practico-html-css#readme",
+  "homepage": "https://github.com/luisfalconmx/google-clon#readme",
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.9",
